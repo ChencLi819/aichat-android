@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- White chat bubble (safe zone ~ 30..78) with a down-left tail -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,32 h30 a12,12 0 0 1 12,12 v16 a12,12 0 0 1 -12,12 h-18 l-14,12 v-12 h-1 a12,12 0 0 1 -12,-12 v-16 a12,12 0 0 1 12,-12 z" />
+    <!-- AI spark: a four-point star inside the bubble -->
+    <path
+        android:fillColor="#00B96B"
+        android:pathData="M59,40 C60.7,47 63.4,49.7 70.5,51.5 C63.4,53.3 60.7,56 59,63 C57.3,56 54.6,53.3 47.5,51.5 C54.6,49.7 57.3,47 59,40 Z" />
+    <!-- A small companion spark, top-right -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M79,28 C79.8,31.2 81.3,32.7 84.5,33.5 C81.3,34.3 79.8,35.8 79,39 C78.2,35.8 76.7,34.3 73.5,33.5 C76.7,32.7 78.2,31.2 79,28 Z" />
+</vector>
