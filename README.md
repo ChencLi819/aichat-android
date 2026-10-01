@@ -4,6 +4,7 @@
 
 **装在手机上的「对话副驾」：你在任何聊天 App 里聊天，它在旁边读懂对方、告诉你该怎么回，一键填进输入框，发不发由你。**
 
+[![CI](https://github.com/ChencLi819/aichat-android/actions/workflows/ci.yml/badge.svg)](https://github.com/ChencLi819/aichat-android/actions/workflows/ci.yml)
 [![Version](https://img.shields.io/badge/%E7%89%88%E6%9C%AC-v1.5-1f6feb?style=flat-square)](#快速开始)
 [![Android](https://img.shields.io/badge/Android-11%2B-3DDC84?style=flat-square&logo=android&logoColor=white)](#快速开始)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
