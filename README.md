@@ -8,7 +8,7 @@
 [![Android](https://img.shields.io/badge/Android-11%2B-3DDC84?style=flat-square&logo=android&logoColor=white)](#快速开始)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-姊妹仓库：`aichat-windows`（Windows 版）
+姊妹仓库：[aichat-windows](https://github.com/ChencLi819/aichat-windows)（Windows 版）
 
 </div>
 
@@ -58,7 +58,7 @@
 ./gradlew assembleRelease    # 需要仓库外的签名配置，路径通过环境变量指定
 ```
 
-已签名的 release 安装包随 [Releases](../../releases) 发布，可直接安装（Android 11+）。
+预构建安装包见 [Releases](https://github.com/ChencLi819/aichat-android/releases)（当前 v1.5 为 debug 签名，可直接安装，Android 11+）。
 
 **2. 填密钥。** 打开 App → 设置 →「接口」三张卡：判断接口（大模型，必填）/ 回复接口 / 视觉接口（OCR 用，可先不填）。三路都是标准 OpenAI 兼容的 `/chat/completions`，内置预设（百炼 DeepSeek / DeepSeek 官方 / 百炼通义千问 / OpenAI / OpenRouter / 自定义），每张卡都有独立的一键连通测试；回复、视觉留空会自动沿用判断接口的密钥。
 
