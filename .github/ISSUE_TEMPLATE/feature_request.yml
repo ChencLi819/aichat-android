@@ -1,0 +1,30 @@
+name: 功能建议
+description: 提出一个想让 AIChat 做到的事
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: 提建议前请先看一眼现有 Issue，避免重复。**发送权永远在用户手里**这条产品底线不接受任何绕过它的建议。
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 使用场景
+      description: 你在哪个聊天 App 里、想让它做到什么。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 期望的方案
+      description: 大概什么形态就算解决了；有参考产品也可以提。
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: 边界确认
+      options:
+        - label: 该功能不涉及自动发送消息、不碰转账 / 红包 / 收款
+          required: true
+        - label: 该功能不需要 hook / 注入 / 读取聊天 App 私有数据
+          required: true

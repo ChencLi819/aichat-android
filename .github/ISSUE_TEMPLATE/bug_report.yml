@@ -1,0 +1,53 @@
+name: 问题反馈（Bug）
+description: 报告一个可以复现的问题
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交前请先检索现有 Issue。**不要贴真实聊天内容、联系人信息或密钥**，测试数据请用虚构示例。
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 发生了什么
+      description: 现象与期望行为的对比。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开 …
+        2. 在 … App 里 …
+        3. 看到 …
+    validations:
+      required: true
+  - type: dropdown
+    id: app-stage
+    attributes:
+      label: 出问题的环节
+      options:
+        - 读不到消息（无障碍采集）
+        - 分析结果不对（判断 / 候选回复）
+        - 悬浮窗显示或交互
+        - 填入 / 复制
+        - 接口连通 / 密钥配置
+        - OCR / 截屏识别
+        - 安装、升级、权限
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 环境信息
+      description: 手机型号 / 系统版本 / 对应聊天 App 版本 / 本应用版本
+      placeholder: "例：Redmi K60，HyperOS 2，QQ 9.3.50，AIChat v1.5"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 截图或日志
+      description: 请确认截图里没有真实聊天内容。

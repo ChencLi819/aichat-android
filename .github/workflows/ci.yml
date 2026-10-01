@@ -22,12 +22,8 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      # The build script reads the signing-properties path from this env var;
-      # on CI it points nowhere, so debug builds come out unsigned as intended.
       - name: Build debug APK
         run: ./gradlew assembleDebug --stacktrace
-        env:
-          JEV_KEYSTORE_PROPS: /tmp/keystore-absent.properties
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
